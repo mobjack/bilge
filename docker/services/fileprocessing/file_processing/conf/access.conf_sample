@@ -1,0 +1,11 @@
+[gstorage]
+auth_json = /path/to/gcp/json/auth.json
+
+[mongo]
+mongo_host = ip_or_hostname
+mongo_port = 27017
+auth_user = bilge
+auth_cred = someusercreds
+bilge_db = bilge
+test_collection = testing
+
