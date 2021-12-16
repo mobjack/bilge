@@ -16,11 +16,12 @@ services:
     restart: unless-stopped
     
   fileprocess:
-    image: bilgefileprocessing
+    image: local:bilgefileprocessing
+    build: ./docker/services/fileprocessing/
     container_name: smb_py
     environment:
-      - SMB_USERNAME=guru
-      - SMB_PASSWORD=abc1234
+      - SMB_USERNAME=${SMB_USERNAME}
+      - SMB_PASSWORD=${SMB_PASSWORD}
     volumes:
       - /home/guru/smb:/data/smb
     ports:
