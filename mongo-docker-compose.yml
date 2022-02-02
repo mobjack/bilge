@@ -16,10 +16,10 @@ services:
       - 27017:27017
     restart: unless-stopped
     
-  fileprocess:
-    image: local:bilgefileprocessing
-    build: ./docker/services/fileprocessing/
-    container_name: smb_py
+  smb:
+    image: local:bilge_smb
+    build: ./docker/services/smb/
+    container_name: smb
     environment:
       - SMB_USERNAME=${SMB_USERNAME}
       - SMB_PASSWORD=${SMB_PASSWORD}

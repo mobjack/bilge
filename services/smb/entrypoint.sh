@@ -4,7 +4,7 @@ trap 'kill -TERM $PID ; wait $PID' TERM INT
 
 if [ "$1" = "smbd" ] ; then
   shift
-  if [ "$1" == "--" ] ; then
+  if [ "$1" = "--" ] ; then
     shift
   fi
 

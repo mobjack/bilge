@@ -1,6 +1,0 @@
-setuptools==49.6.0
-wheel
-google-cloud-storage>=1.37.0
-google-cloud-vision>=2.2.0
-pymongo>=3.11.3
-shortuuid>=1.0.1
